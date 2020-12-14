@@ -1,14 +1,40 @@
 [tool.poetry]
 name = "slang-prototype"
 version = "0.1.0"
-description = ""
-authors = ["Andres Correa Casablanca <castarco@coderspirit.xyz>"]
+description = "A strongly typed scripting language tailored for systems programmming"
+authors = [
+    "Andres Correa Casablanca <castarco@coderspirit.xyz>",
+    "José Rodríguez <boriel@gmail.com>"
+]
+license = "GPL-3.0"
+
+classifiers = [
+        # How mature is this project? Common values are
+        #   3 - Alpha
+        #   4 - Beta
+        #   5 - Production/Stable
+        'Development Status :: 3 - Alpha',
+
+        # Indicate who your project is intended for
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+
+        # Pick your license as you wish (should match "license" above)
+        'License :: OSI Approved :: GNU General Public License v3',
+
+        # Specify the Python versions you support here.
+        'Programming Language :: Python :: 3.8',
+        ]
+
+keywords = ['slang']  # arbitrary keywords
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+commitizen = "^2.11.0"
+py-githooks = "^1.1.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
